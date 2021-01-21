@@ -24,22 +24,27 @@ public class Circle {
     public double getArea() {
         return this.radius * this.radius * Math.PI;
     }
-    public double getPerimeter(){
-        return 2*Math.PI*this.radius;
+
+    public double getPerimeter() {
+        return 2 * Math.PI * this.radius;
     }
-    public Square getInscribedSquare(){
-        return new Square((radius*2)/Math.sqrt(2));
+
+    public Square getInscribedSquare() {
+        return new Square((radius * 2) / Math.sqrt(2));
     }
-    public Square getCircumscribedSquare(){
-        return new Square(radius*2);
+
+    public Square getCircumscribedSquare() {
+        return new Square(radius * 2);
     }
-    public Circle(Square square){
-        this.radius=Math.sqrt(square.getArea())/Math.PI;
+
+    public Circle(Square square) {
+        this.radius = Math.sqrt(square.getArea()) / Math.PI;
     }
-    public static Square[] getSquares(Circle[] arr){
-        Square[] ans=new Square[arr.length];
-        for(int i=0;i<arr.length;i++){
-            ans[i]=new Square(arr[i]);
+
+    public static Square[] getSquares(Circle[] arr) {
+        Square[] ans = new Square[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            ans[i] = new Square(arr[i]);
         }
         return ans;
     }

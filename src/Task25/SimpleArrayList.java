@@ -21,10 +21,10 @@ public class SimpleArrayList {
     }
 
     public SimpleArrayList(SimpleArrayList simpleArrayList) {
-        size=simpleArrayList.size;
-        cap= simpleArrayList.cap;
-        arr=new int[cap];
-        System.arraycopy(simpleArrayList.arr,0,arr,0,size);
+        size = simpleArrayList.size;
+        cap = simpleArrayList.cap;
+        arr = new int[cap];
+        System.arraycopy(simpleArrayList.arr, 0, arr, 0, size);
     }
 
     public int size() {
@@ -55,7 +55,7 @@ public class SimpleArrayList {
         System.arraycopy(arr, 0, tmp, 0, ind);
         System.arraycopy(other, 0, tmp, ind, sz);
         System.arraycopy(arr, ind, tmp, sz + ind, Math.max(0, size - ind));
-        arr=tmp;
+        arr = tmp;
         size += sz;
         return this;
     }
@@ -73,8 +73,8 @@ public class SimpleArrayList {
     }
 
     public SimpleArrayList append(SimpleArrayList a) {
-        int[] tmp=new int[a.size];
-        System.arraycopy(a.arr,0,tmp,0,a.size);
+        int[] tmp = new int[a.size];
+        System.arraycopy(a.arr, 0, tmp, 0, a.size);
         return insert(size, tmp);
     }
 

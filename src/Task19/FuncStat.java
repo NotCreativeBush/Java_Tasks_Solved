@@ -87,22 +87,22 @@ public class FuncStat {
     }
 
     public static void reverse(int[] arr, int from) {
-        if(from>=arr.length/2){
+        if (from >= arr.length / 2) {
             return;
         }
-        int tmp=arr[from];
-        arr[from]=arr[arr.length-from-1];
-        arr[arr.length-from-1]=tmp;
-        reverse(arr, from+1);
+        int tmp = arr[from];
+        arr[from] = arr[arr.length - from - 1];
+        arr[arr.length - from - 1] = tmp;
+        reverse(arr, from + 1);
     }
 
     public static boolean isPalindrom(String s) {
         boolean bool = s.charAt(0) == s.charAt(s.length() - 1);
-        if(s.length()<=2){
+        if (s.length() <= 2) {
             return bool;
         }
-        if(bool){
-            bool=isPalindrom(s.substring(1,s.length()-1));
+        if (bool) {
+            bool = isPalindrom(s.substring(1, s.length() - 1));
         }
         return bool;
     }

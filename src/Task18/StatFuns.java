@@ -2,22 +2,24 @@ package Task18;
 
 public class StatFuns {
     static int maxOfThree(int a, int b, int c) {
-        return Math.max(a,Math.max(b,c));
+        return Math.max(a, Math.max(b, c));
 //TODO returning the value of the greatest of three numbers passed to the function;
     }
+
     static int greatestDivisor(int n) {
-        int ans=1;
-        for(int i=n-1;i>=2;i--){
-            if(n%i==0){
+        int ans = 1;
+        for (int i = n - 1; i >= 2; i--) {
+            if (n % i == 0) {
                 return i;
             }
         }
         return 1;
 //TODO  returning the greatest divisor of n smaller than n (this will be 1 for prime numbers)
     }
+
     static boolean areRelativelyPrime(int a, int b) {
-        for(int i=2;i<Math.min(a,b);i++){
-            if(a%i==0&&b%i==0){
+        for (int i = 2; i < Math.min(a, b); i++) {
+            if (a % i == 0 && b % i == 0) {
                 return false;
             }
         }
@@ -30,13 +32,13 @@ if the only positive integer that divides both of them is 1.
     }
 
     static boolean isPerfect(int n) {
-        int sum=0;
-        for(int i=1;i<n;i++){
-            if(n%i==0){
-                sum+=i;
+        int sum = 0;
+        for (int i = 1; i < n; i++) {
+            if (n % i == 0) {
+                sum += i;
             }
         }
-        return (sum==n);
+        return (sum == n);
 //TODO returning true if and only if n is a perfect number, i.e.,
 // is the sum of all its divisors (including 1 but excluding n itself).
     }

@@ -28,16 +28,20 @@ public class Square {
     public double getPerimeter() {
         return this.side * 4;
     }
+
     public double getDiagonal() {
         return this.side * Math.sqrt(2);
     }
-    public Circle getInscribedCircle(){
-        return new Circle(side*2);
+
+    public Circle getInscribedCircle() {
+        return new Circle(side * 2);
     }
-    public Circle getCircumscribedCircle(){
-        return new Circle(getDiagonal()/2);
+
+    public Circle getCircumscribedCircle() {
+        return new Circle(getDiagonal() / 2);
     }
-    public Square(Circle circle){
-        this.side=Math.sqrt(circle.getArea());
+
+    public Square(Circle circle) {
+        this.side = Math.sqrt(circle.getArea());
     }
 }

@@ -12,13 +12,13 @@ public class Main {
         System.out.println("Perim   " + s2.getPerimeter());
         System.out.println("Doubled " + s2.getDoubled());
         Square[] sqs = {s1, s2, new Square(3)};
-        System.out.println("Total area: " +Square.getTotalArea(sqs));
-        System.out.println("Greatest  : " +Square.getMax(sqs));
+        System.out.println("Total area: " + Square.getTotalArea(sqs));
+        System.out.println("Greatest  : " + Square.getMax(sqs));
 // ============================================================
-        MyString ms=new MyString("abc");
+        MyString ms = new MyString("abc");
         ms.append("def");
         System.out.println(ms);
-        ms.append(3,"def");
+        ms.append(3, "def");
         System.out.println(ms);
 
 
@@ -36,7 +36,7 @@ public class Main {
         Circle[] crs = {new Circle(2), new Circle(1),
                 new Circle(3), new Circle(4)};
         Square[] squares = Circle.getSquares(crs);
-        System.out.println( "\nAreas of squares " +"from circles: ");
+        System.out.println("\nAreas of squares " + "from circles: ");
         for (Square s : squares)
             System.out.printf("%.2f ", s.getArea());
         System.out.println();

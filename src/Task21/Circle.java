@@ -1,7 +1,6 @@
 package Task21;
 
 
-
 public class Circle {
     private double radius;
 

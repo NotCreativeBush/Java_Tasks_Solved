@@ -6,15 +6,15 @@ public class Task13_01 {
         final int NUMS = 13;
         int[] arr = new int[SIZE];
         int counter = 0;
-        boolean repeat=false;
+        boolean repeat = false;
         for (int i = 0; i < SIZE; i++) {
             do {
                 counter++;
-                repeat=false;
-                arr[i]=(int)(Math.random()*(NUMS)+1);
-                for(int j=0;j<i;j++){
-                    if (arr[i]==arr[j]){
-                        repeat=true;
+                repeat = false;
+                arr[i] = (int) (Math.random() * (NUMS) + 1);
+                for (int j = 0; j < i; j++) {
+                    if (arr[i] == arr[j]) {
+                        repeat = true;
                         break;
                     }
                 }

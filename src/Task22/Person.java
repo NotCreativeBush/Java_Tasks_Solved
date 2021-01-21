@@ -47,28 +47,20 @@ public class Person {
         return ans;
     }
 
-    public static Person getYoungestFemale(Person[] arr){
-        Person ans=null;
-        for(Person x : arr){
-            if(x.isFemale() && (ans==null||x.getBirthYear()> ans.birthYear)){
-                ans=x;
+    public static Person getYoungestFemale(Person[] arr) {
+        Person ans = null;
+        for (Person x : arr) {
+            if (x.isFemale() && (ans == null || x.getBirthYear() > ans.birthYear)) {
+                ans = x;
             }
         }
         return ans;
     }
 
     @Override
-    public String toString(){
-        return name+" "+birthYear;
+    public String toString() {
+        return name + " " + birthYear;
     }
-
-
-
-
-
-
-
-
 
 
 }

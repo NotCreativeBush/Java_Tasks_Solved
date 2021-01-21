@@ -11,8 +11,9 @@ public class Album {
     public Song[] getSongs() {
         return songs;
     }
-    public Album(String title, Song[] songs){
-        this.title=title;
-        this.songs=songs;
+
+    public Album(String title, Song[] songs) {
+        this.title = title;
+        this.songs = songs;
     }
 }

@@ -1,7 +1,6 @@
 package Task21;
 
 
-
 public class Square {
     private double side;
 
@@ -12,8 +11,6 @@ public class Square {
     public Square() {
         this.side = 1;
     }
-
-
 
 
     @Override
@@ -58,13 +55,16 @@ public class Square {
         }
         return ma;
     }
-    public Circle getInscribedCircle(){
-        return new Circle(side*2);
+
+    public Circle getInscribedCircle() {
+        return new Circle(side * 2);
     }
-    public Circle getCircumscribedCircle(){
-        return new Circle(getDiagonal()/2);
+
+    public Circle getCircumscribedCircle() {
+        return new Circle(getDiagonal() / 2);
     }
-    public Square(Circle circle){
-        this.side=Math.sqrt(circle.getArea());
+
+    public Square(Circle circle) {
+        this.side = Math.sqrt(circle.getArea());
     }
 }

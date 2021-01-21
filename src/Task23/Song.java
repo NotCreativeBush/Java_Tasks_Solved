@@ -10,8 +10,9 @@ public class Song {
     public String getTitle() {
         return title;
     }
-    public Song(String singer, String title){
-        this.singer=singer;
-        this.title=title;
+
+    public Song(String singer, String title) {
+        this.singer = singer;
+        this.title = title;
     }
 }

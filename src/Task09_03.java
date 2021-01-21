@@ -11,7 +11,7 @@ public class Task09_03 {
             temp = (temp - 32) * 5 / 9;
         }
         if (mf.equals("F")) {
-            alti =(int) (alti / 3.281);
+            alti = (int) (alti / 3.281);
         }
         if (temp >= 100 - (alti / 300)) {
             System.out.println("Water is gaseous.");

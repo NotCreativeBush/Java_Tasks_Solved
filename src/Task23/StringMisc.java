@@ -12,25 +12,24 @@ public class StringMisc {
         String ans = "";
         for (int i = 0; i < arr.length; i++) {
             if (i == 0 || (i == 1 && arr.length == 3)) {
-                ans+=arr[i].substring(0,1).toUpperCase(Locale.ROOT)+". ";
-            }
-            else{
-                ans+=norm(arr[i]);
+                ans += arr[i].substring(0, 1).toUpperCase(Locale.ROOT) + ". ";
+            } else {
+                ans += norm(arr[i]);
             }
         }
         return ans;
     }
 
     public static String tr(String s, String from, String to) {
-        String ans="";
-        for(int i=0;i<s.length();i++){
-            char t=s.charAt(i);
-            for(int y=0;y<from.length();y++){
-                if(t==from.charAt(y)){
-                    t=to.charAt(y);
+        String ans = "";
+        for (int i = 0; i < s.length(); i++) {
+            char t = s.charAt(i);
+            for (int y = 0; y < from.length(); y++) {
+                if (t == from.charAt(y)) {
+                    t = to.charAt(y);
                 }
             }
-            ans+=(t+"");
+            ans += (t + "");
         }
         return ans;
     }

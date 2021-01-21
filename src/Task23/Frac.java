@@ -6,8 +6,8 @@ public class Frac {
     private int num, denom;
 
     public Frac(int n, int d) {
-        num = n/gcd(n,d);
-        denom = d/gcd(n,d);
+        num = n / gcd(n, d);
+        denom = d / gcd(n, d);
 
     }
 
@@ -21,7 +21,7 @@ public class Frac {
         denom = 1;
     }
 
-    private int gcd(int n1,int n2) {
+    private int gcd(int n1, int n2) {
         if (n2 == 0) {
             return n1;
         }
@@ -30,11 +30,11 @@ public class Frac {
 
 
     @Override
-    public String toString(){
-        if(denom==1){
-            return num+"";
+    public String toString() {
+        if (denom == 1) {
+            return num + "";
         }
-        return num+"/"+denom;
+        return num + "/" + denom;
     }
 
     @Override
@@ -51,25 +51,25 @@ public class Frac {
     }
 
     public static Frac add(Frac a, Frac b) {
-        int d = a.denom*b.denom;
+        int d = a.denom * b.denom;
         int n = a.num * b.denom + b.num * a.denom;
         return new Frac(n, d);
     }
 
     public Frac add(Frac other) {
-        int d = denom*other.denom;
+        int d = denom * other.denom;
         int n = num * other.denom + other.num * denom;
         return new Frac(n, d);
     }
 
     public static Frac sub(Frac a, Frac b) {
-        int d = a.denom*b.denom;
+        int d = a.denom * b.denom;
         int n = a.num * b.denom - b.num * a.denom;
         return new Frac(n, d);
     }
 
     public Frac sub(Frac other) {
-        int d = denom*other.denom;
+        int d = denom * other.denom;
         int n = num * other.denom - other.num * denom;
         return new Frac(n, d);
     }

@@ -8,25 +8,25 @@ import java.util.Scanner;
 public class BinaryReading {
     public static void main(String[] args) {
         try {
-            Scanner scanner=new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Please input the name of the file.");
             FileInputStream fis = new FileInputStream(scanner.nextLine());
 
 
             int ch;
-            StringBuilder ans=new StringBuilder();
+            StringBuilder ans = new StringBuilder();
             while ((ch = fis.read()) != -1) {
-                char chch=(char) ch;
-                if((chch>='a'&&chch<='z')||(chch>='A'&&chch<='Z')){
+                char chch = (char) ch;
+                if ((chch >= 'a' && chch <= 'z') || (chch >= 'A' && chch <= 'Z')) {
                     ans.append(chch);
-                }else{
-                    if(ans.length()>=4)
+                } else {
+                    if (ans.length() >= 4)
                         System.out.println(ans);
-                    ans=new StringBuilder();
+                    ans = new StringBuilder();
                 }
 
             }
-            if(ans.length()>=4)
+            if (ans.length() >= 4)
                 System.out.println(ans);
 
 

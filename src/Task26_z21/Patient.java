@@ -4,8 +4,9 @@ public class Patient {
     private String name;
     private String illness;
     private String treatment;
-    public Patient(String name){
-        this.name=name;
+
+    public Patient(String name) {
+        this.name = name;
     }
 
     public void setIllness(String illness) {

@@ -1,4 +1,4 @@
-package Task27_z22;
+package Task27_z22.Problem1;
 
 public class Node {
     private double val;

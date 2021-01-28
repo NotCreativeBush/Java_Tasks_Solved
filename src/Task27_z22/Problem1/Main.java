@@ -1,4 +1,4 @@
-package Task27_z22;
+package Task27_z22.Problem1;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,5 +1,7 @@
-package Task27_z22;
+package Task27_z22.Problem1;
 
+
+import Task27_z22.Problem1.Node;
 
 public class RPNStack {
     private Node top;
